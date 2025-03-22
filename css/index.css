@@ -18,8 +18,8 @@ header {
 
 header img {
   margin-right: 15px;
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: auto;
   object-fit: contain;
 }
 
