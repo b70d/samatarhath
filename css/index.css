@@ -18,7 +18,9 @@ header {
 
 header img {
   margin-right: 15px;
-  object-fit: cover;
+  height: 50px;
+  widht: 50px;
+  object-fit: contain;
 }
 
 /* Hamburger Button inside Header */
