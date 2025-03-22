@@ -17,6 +17,8 @@ header {
 }
 
 header img {
+  position: absolute;
+  left: 0;
   margin-right: 15px;
   width: 150px;
   object-fit: contain;
