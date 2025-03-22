@@ -17,11 +17,10 @@ header {
 }
 
 header img {
-  position: absolute;
-  left: auto;
-  margin-right: 15px;
-  width: 150px;
-  object-fit: contain;
+  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Make the image responsive */
+  max-width: 150px; /* Maximum width, adjust as needed */
+  object-fit: contain; /* Ensures image doesn't stretch, maintains aspect ratio */
 }
 
 /* Hamburger Button inside Header */
@@ -168,6 +167,14 @@ body.active .main-content {
 
 /* Mobile Mode - Show hamburger button on mobile */
 @media (max-width: 767px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures content is spaced properly */
+  }
+  header img {
+    max-width: 100px; /* Adjust for smaller screen sizes */
+  }
   .hamburger {
     display: block; /* Show hamburger button on mobile */
   }
