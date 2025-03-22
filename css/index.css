@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #6200ea;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align logo and buttons on either side */
+  padding: 10px 20px;
+}
+
+header img {
+  margin-right: 15px;
+}
+
+/* Hamburger Button inside Header */
+.hamburger {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1100;
+  display: block;
+}
+
+/* Login and Register Buttons */
+.buttons button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buttons button:hover {
+  background: #0056b3;
+}
+
+/* Sidebar (Hamburger Menu) */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  background: #3700b3;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 0;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.main-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.main-button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .lang {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer .lang-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+footer .lang-btn:hover {
+  background-color: #45a049;
+}
+
+/* Active Sidebar */
+body.active .sidebar {
+  left: 0;
+}
+
+body.active .main-content {
+  margin-left: 250px;
+}
+
+/* Smooth Animation */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Mobile Mode - Show hamburger button on mobile */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block; /* Show hamburger button on mobile */
+  }
+  .sidebar ul {
+    display: block;
+  }
+  /* Show the sidebar on mobile when active */
+  body.active .sidebar {
+    left: 0;
+  }
+  body.active .main-content {
+    margin-left: 0;
+  }
+}
+
+/* Desktop Mode - Hide hamburger button, use top navigation */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;  /* Hide hamburger button on desktop */
+  }
+  /* Convert sidebar items into top navigation for desktop */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar {
+    position: static;  /* Sidebar becomes a top nav */
+    width: auto;
+    background: #333;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .sidebar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar ul li {
+    padding: 10px 20px;
+  }
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+}
