@@ -1,109 +1,83 @@
-/* Resetting some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.main-content {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2.lang {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
 .register-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-form form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+.register-form label {
+    margin-bottom: 8px;
     font-weight: bold;
-    margin-bottom: 5px;
     color: #333;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="tel"],
-input[type="password"],
-input[type="radio"] {
-    margin-bottom: 15px;
+.register-form input[type="text"],
+.register-form input[type="number"],
+.register-form input[type="tel"] {
     padding: 10px;
+    margin-bottom: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-}
-
-input[type="radio"] {
-    width: auto;
-    margin-right: 10px;
-}
-
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
 }
 
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-input[type="checkbox"] {
+.register-form input[type="radio"] {
     margin-right: 5px;
 }
 
-.lang {
-    display: inline-block;
+.register-form .gender,
+.register-form .religion,
+.register-form .marital-status,
+.register-form .blood-group-options {
+    margin-bottom: 16px;
 }
 
-/* Media Query for responsiveness */
+.register-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.register-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #45a049;
+}
+
+.register-form a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    direction: rtl; /* Handle languages like Arabic, for other languages you can adjust as needed */
+}
+
+/* Responsive */
 @media (max-width: 600px) {
-    .main-content {
+    .register-form {
         padding: 15px;
     }
 
-    h2.lang {
-        font-size: 18px;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    input[type="tel"],
-    input[type="password"],
-    input[type="radio"],
-    button[type="submit"] {
-        padding: 8px;
+    .register-form input,
+    .register-form button {
+        font-size: 14px;
     }
 }
