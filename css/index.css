@@ -1,7 +1,7 @@
 /* General Styles */
 @font-face {
   font-family: 'Bornomala';
-  src: url('fonts/bornomala.ttf') format('truetype');
+  src: url('fonts/bornomala.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
