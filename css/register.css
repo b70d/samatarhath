@@ -1,5 +1,5 @@
 
-.login-form {
+.register-form {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -8,7 +8,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-form form {
+.register-form form {
     display: flex;
     flex-direction: column;
 }
