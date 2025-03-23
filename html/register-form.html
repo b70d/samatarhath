@@ -34,14 +34,14 @@
         <form action="#" method="POST">  
             <label for="name" class="lang" data-bn="নাম" data-en="Name">নাম</label>  
             <input type="text" id="name" name="name" required placeholder="নাম">  
-            
+
             <label for="address" class="lang" data-bn="বর্তমান ঠিকানা" data-en="Present Address">বর্তমান ঠিকানা</label>  
             <input type="text" id="address" name="address" required placeholder="বিভাগ, জেলা, উপজেলা, গ্রাম/রাস্তা/হোল্ডিং/এলাকা">  
-            
+
             <label for="gender" class="lang" data-bn="লিঙ্গ" data-en="Gender">লিঙ্গ</label>  
     <div class="gender">
-            <input type="radio" id="male" name="gender" value="male" required> পুরুষ  
-            <input type="radio" id="female" name="gender" value="female"> নারী  
+            <input type="radio" id="male" name="gender" value="male" required> <span class="lang" data-bn="পুরুষ" data-en="Male">পুরুষ</span>  
+            <input type="radio" id="female" name="gender" value="female"> <span class="lang" data-bn="নারী" data-en="Female">নারী</span>  
     </div>
     <div class="age">
             <label for="age" class="lang" data-bn="বয়স" data-en="Age">বয়স</label>  
@@ -49,17 +49,16 @@
     </div>
     <div class="religion">
             <label for="religion" class="lang" data-bn="ধর্ম" data-en="Religion">ধর্ম</label>  
-            <input type="radio" id="islam" name="religion" value="islam" required> ইসলাম  
-            <input type="radio" id="hindu" name="religion" value="hindu"> হিন্দু  
-            <input type="radio" id="christian" name="religion" value="christian"> খ্রিস্টান
+            <input type="radio" id="islam" name="religion" value="islam" required> <span class="lang" data-bn="ইসলাম" data-en="Islam">ইসলাম</span>  
+            <input type="radio" id="hindu" name="religion" value="hindu"> <span class="lang" data-bn="হিন্দু" data-en="Hindu">হিন্দু</span>  
+            <input type="radio" id="christian" name="religion" value="christian"> <span class="lang" data-bn="খ্রিস্টান" data-en="Christian">খ্রিস্টান</span>
      </div>
      <div class="marital-status">
             <label for="marital-status" class="lang" data-bn="বৈবাহিক অবস্থা" data-en="Marital Status">বৈবাহিক অবস্থা</label>  
-            <input type="radio" id="single" name="marital-status" value="single" required> অবিবাহিত
-            <input type="radio" id="married" name="marital-status" value="married"> বিবাহিত
+            <input type="radio" id="single" name="marital-status" value="single" required> <span class="lang" data-bn="অবিবাহিত" data-en="Single">অবিবাহিত</span>
+            <input type="radio" id="married" name="marital-status" value="married"> <span class="lang" data-bn="বিবাহিত" data-en="Married">বিবাহিত</span>
      </div>
      <div class="proffession">
-            
             <label for="profession" class="lang" data-bn="পেশা" data-en="Profession">পেশা</label>  
             <input type="text" id="profession" name="profession" required placeholder="পেশা">  
       </div>
@@ -74,16 +73,17 @@
                 <input type="radio" id="ab+" name="blood-group" value="AB+"> AB+  
                 <input type="radio" id="ab-" name="blood-group" value="AB-"> AB-  
             </div>
-            
+
             <label for="mobile" class="lang" data-bn="মোবাইল নম্বর" data-en="Mobile No">মোবাইল নম্বর</label>  
             <input type="tel" id="mobile" name="mobile" pattern="^\+8801[3-9][0-9]{8}$|^01[3-9][0-9]{8}$" required placeholder="মোবাইল নম্বর (যেমন: +8801********** বা 01*********)" />  
-            
+
             <label><input type="checkbox" id="terms" name="terms" required> আমি <a href="#" class="lang" data-bn="শর্তাবলী" data-en="terms and conditions">শর্তাবলী</a> মেনে চলতে সম্মত  </label>
-             
+
             <button type="submit" class="lang" data-bn="রেজিস্টার" data-en="Register">রেজিস্টার</button>  
         </form>  
     </div>  
 </main>
+
     </div>
     <footer>
         <div class="footer-links">
