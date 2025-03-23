@@ -24,6 +24,7 @@
     color: #333;
     display: inline-block; /* Labels will sit next to the input fields */
     width: 100%;
+    text-align: left;
 }
 
 .register-form input[type="text"],
