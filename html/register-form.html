@@ -39,24 +39,30 @@
             <input type="text" id="address" name="address" required placeholder="বিভাগ, জেলা, উপজেলা, গ্রাম/রাস্তা/হোল্ডিং/এলাকা">  
             
             <label for="gender" class="lang" data-bn="লিঙ্গ" data-en="Gender">লিঙ্গ</label>  
+    <div class="gender">
             <input type="radio" id="male" name="gender" value="male" required> পুরুষ  
             <input type="radio" id="female" name="gender" value="female"> নারী  
-            
+    </div>
+    <div class="age">
             <label for="age" class="lang" data-bn="বয়স" data-en="Age">বয়স</label>  
             <input type="number" id="age" name="age" required placeholder="বয়স">  
-            
+    </div>
+    <div class="religion">
             <label for="religion" class="lang" data-bn="ধর্ম" data-en="Religion">ধর্ম</label>  
             <input type="radio" id="islam" name="religion" value="islam" required> ইসলাম  
             <input type="radio" id="hindu" name="religion" value="hindu"> হিন্দু  
-            <input type="radio" id="christian" name="religion" value="christian"> খ্রিস্টান>
-            
+            <input type="radio" id="christian" name="religion" value="christian"> খ্রিস্টান
+     </div>
+     <div class="marital-status">
             <label for="marital-status" class="lang" data-bn="বৈবাহিক অবস্থা" data-en="Marital Status">বৈবাহিক অবস্থা</label>  
-            <input type="radio" id="single" name="marital-status" value="single" required> অবিবাহিত>
-            <input type="radio" id="married" name="marital-status" value="married"> বিবাহিত>
+            <input type="radio" id="single" name="marital-status" value="single" required> অবিবাহিত
+            <input type="radio" id="married" name="marital-status" value="married"> বিবাহিত
+     </div>
+     <div class="proffession">
             
             <label for="profession" class="lang" data-bn="পেশা" data-en="Profession">পেশা</label>  
             <input type="text" id="profession" name="profession" required placeholder="পেশা">  
-            
+      </div>
             <label for="blood-group" class="lang" data-bn="রক্তের গ্রুপ" data-en="Blood Group">রক্তের গ্রুপ</label>  
             <div class="blood-group-options">
                 <input type="radio" id="a+" name="blood-group" value="A+" required> A+  
@@ -72,7 +78,7 @@
             <label for="mobile" class="lang" data-bn="মোবাইল নম্বর" data-en="Mobile No">মোবাইল নম্বর</label>  
             <input type="tel" id="mobile" name="mobile" pattern="^\+8801[3-9][0-9]{8}$|^01[3-9][0-9]{8}$" required placeholder="মোবাইল নম্বর (যেমন: +8801********** বা 01*********)" />  
             
-            <input type="checkbox" id="terms" name="terms" required> আমি <a href="[#terms-link](https://samatarhath.netlify.app/html/register-form.html#terms-link)" class="lang" data-bn="শর্তাবলী" data-en="terms and conditions">শর্তাবলী</a> মেনে চলতে রাজী  
+            <input type="checkbox" id="terms" name="terms" required> আমি <a href="#" class="lang" data-bn="শর্তাবলী" data-en="terms and conditions">শর্তাবলী</a> মেনে চলতে সম্মত  
              
             <button type="submit" class="lang" data-bn="রেজিস্টার" data-en="Register">রেজিস্টার</button>  
         </form>  
