@@ -45,6 +45,7 @@
 
 .register-form input[type="checkbox"] {
     margin-right: 10px;
+    float: left;
 }
 
 .register-form button {
