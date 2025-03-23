@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.register-form h2 {
+    margin-top: 0;
+}
+
 .register-form label {
     margin-bottom: 8px;
     font-weight: bold;
