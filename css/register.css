@@ -1,21 +1,16 @@
-/* Basic reset */
-.register-form {
-    background-color: #fff;
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
+    background-color: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align elements to the start (left) */
-    margin: auto auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.register-form form {
+.login-form form {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .register-form label {
